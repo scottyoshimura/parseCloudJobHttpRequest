@@ -1,5 +1,5 @@
 //lets define the job. we will use a promise scheme, and just print the response to the log.
-Parse.Cloud.job('seattleGovDataGetRequest', function(request, response) {
+Parse.Cloud.job('simpleGetRequest', function(request, response) {
     Parse.Cloud.httpRequest(
         {
             url: "www.cnn.com",
