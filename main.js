@@ -7,11 +7,11 @@ Parse.Cloud.job('seattleGovDataGetRequest', function(request, response) {
     Parse.Cloud.httpRequest(
         {
           //lets create a get request to log a user in and get a tokens
-            url: 'https://api.parse.com/1/login?username=scottyoshimura&password=Giant2015',
+            url: 'https://api.parse.com/1/login?username=addyourusername&password=addyourpassword',
             headers: {
-    'X-Parse-Application-Id': 'HpEMWZmbz35shQJ1pLj6LetPIaZC5mVcoZRPh8ZV',
+    'X-Parse-Application-Id': 'addyourappid',
     'Content-Type': 'application/json',
-    'X-Parse-REST-API-Key': 'bdKk7qDxHaZimqT5jaQfWDUhWMeb8rnRPyAYLDKp',
+    'X-Parse-REST-API-Key': 'addyourrestapikey',
     'X-Parse-Revocable-Session': '1' },
             success: function(httpResponse) {
                 //lets just see if we can get the console to do anyting
@@ -32,7 +32,7 @@ Parse.Cloud.job('seattleGovDataGetRequest', function(request, response) {
 
 Parse.Cloud.httpRequest(
         {
-            url: "https://data.seattle.gov/resource/y7pv-r3kh.json?$select=occurred_date_or_date_range_start,longitude,latitude,%20offense_type,%20hundred_block_location,summarized_offense_description",
+            url: "http://www.cnn.com",
             success: function(httpResponse) {
                 console.log("Below is the response from the SODA api");
                 //when we used response.success twice in this program we got an error, so we will comment out the response.success below and use it in a later closure.
